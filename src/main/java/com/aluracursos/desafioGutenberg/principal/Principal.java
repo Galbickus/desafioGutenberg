@@ -1,5 +1,6 @@
 package com.aluracursos.desafioGutenberg.principal;
 
+import com.aluracursos.desafioGutenberg.model.Datos;
 import com.aluracursos.desafioGutenberg.service.ConsumoAPI;
 import com.aluracursos.desafioGutenberg.service.ConvierteDatos;
 
@@ -10,5 +11,7 @@ public class Principal {
     public void muestraElMenu(){
         var json = consumoApi.obtenerDatos(URL_BASE);
         System.out.println(json);
+        var datos = conversor.obtenerDatos(json, Datos.class);
+        System.out.println(datos);
     }
 }
