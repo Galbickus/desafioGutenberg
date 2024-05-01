@@ -22,6 +22,7 @@ public class Principal {
         datos.resultados().stream()
                 .sorted(Comparator.comparing(DatosLibro::numeroDeDescargas).reversed())
                 .limit(10)
+                .map(l->l.titulo().toUpperCase())
                 .forEach(System.out::println);
 
     }
