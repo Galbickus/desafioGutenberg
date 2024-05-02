@@ -20,7 +20,7 @@ Configuración del Ambiente Java;
 Creación del Proyecto;
 Consumo de la API;
 Análisis de la Respuesta JSON;
-Filtro de Monedas;
+Filtro de libros por título o autor;
 Exhibición de Resultados a los usuarios;
 
 # Recursos empleados 🚀
