@@ -6,8 +6,10 @@ import com.aluracursos.desafioGutenberg.service.ConsumoAPI;
 import com.aluracursos.desafioGutenberg.service.ConvierteDatos;
 
 import java.util.Comparator;
+import java.util.DoubleSummaryStatistics;
 import java.util.Optional;
 import java.util.Scanner;
+import java.util.stream.Collectors;
 
 public class Principal {
     private static final String URL_BASE = "https://gutendex.com/books/";
@@ -42,5 +44,15 @@ public class Principal {
         }else{
             System.out.println("Libro no encontrado");
         }
+
+        //Trabajando con estadisticas general del sitio( no del libro buscado sino hay que cambiar la busqueda)
+        DoubleSummaryStatistics est = datos.resultados().stream()
+                .filter(d -> d.numeroDeDescargas() >0 )
+                .collect(Collectors.summarizingDouble(DatosLibro::numeroDeDescargas));
+        System.out.println("Cantidad media de descargas: " + est.getAverage());
+        System.out.println("Cantidad máxima de descargas: "+ est.getMax());
+        System.out.println("Cantidad mínima de descargas: " + est.getMin());
+        System.out.println("Cantidad de registros evaluados para calcular las estadisticas: " + est.getCount());
+
     }
 }
