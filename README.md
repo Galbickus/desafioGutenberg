@@ -1,5 +1,5 @@
 <h1 align="center">
- Biblioteca virtual de libros
+ Biblioteca virtual
 </p>
 
 
