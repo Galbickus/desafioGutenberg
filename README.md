@@ -23,7 +23,7 @@ Análisis de la Respuesta JSON;
 Filtro de libros por título o autor;
 Exhibición de Resultados a los usuarios;
 
-# Recursos empleados 🚀
+# Recursos 🚀
 Utiliza las siguientes tecnologías y herramientas:
 - **Java**: El lenguaje de programación principal utilizado para desarrollar la lógica de la aplicación
 - **API**: API web JSON para metadatos de libros electrónicos del : <a href="https://gutendex.com/">Proyecto Gütemberg</a>. API abierta, no es necesario obtener una apikey.
