@@ -3,9 +3,10 @@
 </p>
 
 
-#  Desafio Gutenberg 📖
+#  Desafio Gutenberg 📖 (etapa 1)
 
-Consume API de libros
+Consume API de libros 
+Muestra resultados directamente, sin base de datos propia (la persistencia de datos se hará en la próxima etapa, en el proyecto llamado "Liter").
 
 
 # Consigna del desafío
